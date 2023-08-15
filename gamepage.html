@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz De Matemática</title>
+    <link rel="stylesheet" href="gp.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="gameplay.js"></script>
+</head>
+<body onload="playerset()">
+    <h4 id="name1"></h4><span id="score1"></span>
+    <br>
+    <h4 id="name2"></h4><span id="score2"></span>
+
+    <div class="container">        
+        <center>
+            <h1>Quiz de Matemática</h1>
+            <br>
+            <h3 id="qturn">Turno de pergunta:</h3>
+            <br>
+            <h3 id="aturn">Turno de resposta:</h3>
+            <br>
+            <br>
+            <div id="output"></div>
+            <br>
+            <h3>Número 1</h3>
+            <input type="text" id="number1" placeholder="number one">
+            <h3>Número 2</h3>
+            <input type="text" id="number2" placeholder="number two">
+            <br>
+            <button id="sender" onclick="startgame()" class="btn btn-success">Começar Turno!</button>
+        </center>
+    </div>
+</body>
+</html>

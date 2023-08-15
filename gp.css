@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(252, 192, 255);
+}
+
+#output{
+    background: rgba(255, 27, 225, 0.11);
+    border-top: 10px solid rgba(224, 67, 255, 0.43);
+    box-shadow: 5px 5px black;
+    padding-bottom: 30px;
+}
+
+#sender{
+    box-shadow: 5px 5px black;
+    margin-top: 20px;
+}
