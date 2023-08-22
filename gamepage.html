@@ -11,13 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <script src="gameplay.js"></script>
 </head>
 <body onload="playerset()">
-    <h4 id="name1"></h4><span id="score1"></span>
+    <h4 id="name1" class="pointsManagerStyle"></h4><span id="score1" class="pointsManagerStyle"></span>
     <br>
-    <h4 id="name2"></h4><span id="score2"></span>
+    <h4 id="name2" class="pointsManagerStyle"></h4><span id="score2" class="pointsManagerStyle"></span>
 
     <div class="container">        
         <center>
@@ -36,6 +34,7 @@
             <input type="text" id="number2" placeholder="number two">
             <br>
             <button id="sender" onclick="startgame()" class="btn btn-success">Começar Turno!</button>
+            <script src="gameplay.js"></script>
         </center>
     </div>
 </body>
