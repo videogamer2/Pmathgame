@@ -20,7 +20,7 @@ function playerset(){
     document.getElementById("score2").innerHTML = points2;
 }
 function startgame(){
-    document.getElementById("output").innerHTML="<h3 id='turnMan'></h3> <br> <h3 id='placeholder'></h3> <br> <input type='text' id='gameInput'></input> <br> <button onclick='answerProcedure()' id='sender'>responder</button>";
+    document.getElementById("output").innerHTML="<h3 id='turnMan'></h3> <br> <h3 id='placeholder'></h3> <br> <input type='text' id='gameInput'></input> <br> <button onclick='answerProcedure()' id='sender2'>responder</button>";
     document.getElementById("turnMan").innerHTML="Sua vez, " + aturnChecker + "!";
     document.getElementById("number1").innerHTML=" ";
     document.getElementById("number2").innerHTML=" ";
@@ -35,11 +35,11 @@ function cleanupNrestart(){
     document.getElementById("gameInput").innerHTML=" ";
     document.getElementById("output").innerHTML= " ";
     if (aturnChecker == playerTwoName) {
-        aturnChecker == playerOneName;
+        aturnChecker = playerOneName;
         document.getElementById("qturn").innerHTML="Turno de Pergunta: " + playerTwoName;
         document.getElementById("aturn").innerHTML="Turno de Resposta: " + playerOneName;
     } else {
-        aturnChecker == playerTwoName;
+        aturnChecker = playerTwoName;
         document.getElementById("qturn").innerHTML="Turno de Pergunta: " + playerOneName;
         document.getElementById("aturn").innerHTML="Turno de Resposta: " + playerTwoName;
     }
@@ -49,8 +49,10 @@ function answerProcedure(){
     if (given == answer) {
         if (aturnChecker == playerTwoName) {
             points2 = points2 + 1;
+            // cleanupNrestart();
         } else {
             points1 = points1 + 1;
+            // cleanupNrestart();
         }
         document.getElementById("score1").innerHTML = points1;
         document.getElementById("score2").innerHTML = points2;
